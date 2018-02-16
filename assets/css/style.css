@@ -1,0 +1,33 @@
+body {
+    background-image: url("../images/TDAR_Cartoons.jpg");
+
+ }
+ .jumbotron{
+     background-color: firebrick;
+     margin-left: 50px;
+     margin-right:50px;
+ }
+
+ .container{
+    background-color: bisque;
+    color: deeppink;
+    text-align: center;
+ }
+
+ #Hangman-Game{
+     background-color: bisque;
+     color: deeppink;
+     font-family:Comic Sans MS, Comic Sans, cursive;
+     margin-left:100px;
+     margin-right:100px;
+     text-align: center;
+     height :300px;
+     line-height: 2.5;
+
+ }
+ h1{
+     font-family: Comic Sans MS, Comic Sans, cursive;
+ }
+ p{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+ }

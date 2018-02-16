@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hangman-Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <div class="jumbotron" id="jumbo">
+        <div class="container">
+            <h1 class="display-4">90's were the best!</h1>
+                <p class="lead">Here is some HANGMAN to revive your 90's memory.</p>
+        </div>
+    </div>
     <div id = "Hangman-Game">
         <h2>Hangman Game</h2>
         <p>Press any key to get started
@@ -15,13 +24,13 @@
         <p>Wins:
             <span id="wins"></span>
         </p>
-        <p>Guesses Remaining
+        <p>Guesses Remaining:
             <span id="guesses-rem"></span>
         </p>
-        <p>Letters Already Guessed
+        <p>Letters Already Guessed:
             <span id="guessed-letters"></span>
         </p>
-        <p>Letter Guessed
+        <p>Letter Guessed:
             <span id ="letter-guessed"></span>
         </p>
     </div>

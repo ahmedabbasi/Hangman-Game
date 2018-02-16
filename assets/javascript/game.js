@@ -37,9 +37,9 @@ function newGame() {
     // for loop over pickedWordArray, at each iteration, check IF pickedWordArray[i] === " ", then push in a " " to pickedWordPlaceholder, else push a "_"
     for (i = 0; i < pickedWordArray.length; i++) {
         if (pickedWordArray[i] === " ") {
-            pickedWordArray.push(" ");
+            pickedWordPlaceholder.push(" ");
         } else {
-            pickedWordArray.push("_");
+            pickedWordPlaceholder.push(" _ ");
         }
     }
     // write placeholder array to DOM
@@ -76,19 +76,21 @@ function newGame() {
                 // decrement guessesLeft
                 guessesremaining--;
             }
+            
             // check guessesLeft up against 0
             if (guessesremaining === 0) {
                 // if yes, you lose
-                document.alert("You Lose");
+                alert("You Lose");
             }
             // check to see if placeholderArray.join('') === pickedWordArray.join('')
             if (pickedWordPlaceholder.join('') === pickedWordArray.join('')) {
                 // if yes, you win!
-                document.alert("You Win");
-                wins++;
-                
+                wins++ ;
+                alert("You Win");   
             }
+                    
         }
+
         // else alert / write to DOM that user already guessed that letter
         else {
             alert("User already guessed the word");
@@ -103,6 +105,6 @@ function newGame() {
 
     }
     
-    
-};
+}
+newGame();
 
